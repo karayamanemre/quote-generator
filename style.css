@@ -31,6 +31,9 @@ body {
 
 .quote-text {
   font-size: 2.25rem;
+  color: #000;
+  text-stroke: 0.7px #fff;
+  -webkit-text-stroke: 0.7px #fff;
 }
 
 .long-quote {
@@ -51,13 +54,15 @@ body {
 }
 
 button {
+  display: flex;
+  align-items: center;
   cursor: pointer;
   font-size: 20px;
   height: 2.5rem;
   border: none;
   border-radius: 10px;
-  color: #fff;
-  background-color: #333;
+  color: #000;
+  background-color: #fff;
   outline: none;
   padding: 0.5rem 1.8rem 0.5rem 1.8rem;
   box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
@@ -71,6 +76,11 @@ button:hover {
 button:active {
   transform: translate(0, 0.3rem);
   box-shadow: 0 0.1rem rgba(121, 121, 121, 0.65);
+}
+
+.twitter-button {
+  width: auto;
+  padding: 7px;
 }
 
 .twitter-button:hover {
